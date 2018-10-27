@@ -4,16 +4,27 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6de380b8-7e07-4a26-9070-538a35b66679" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter3/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter3/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter4/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter4/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter4/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter4/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter4/mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter4/mysql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/mybatis-config.xml" afterDir="false" />
+    <list default="true" id="6de380b8-7e07-4a26-9070-538a35b66679" name="Default Changelist" comment="init project">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/enumeration/SexEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/enumeration/SexEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/EmployeeTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/EmployeeTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/FemaleEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/FemaleEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/FemaleHealthForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/FemaleHealthForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/HealthForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/HealthForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/MaleEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/MaleEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/MaleHealthForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/MaleHealthForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/WorkCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/WorkCard.java" afterDir="false" />
     </list>
+    <list id="1653bea8-9619-4171-82c4-d308de9321e0" name="undo" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../mybatis-3-mybatis-3.4.6/target/" />
+    <ignored path="workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,91 +61,117 @@
           <entry key="cmd" value="1" />
           <entry key="fxml" value="1" />
           <entry key="iml" value="4" />
-          <entry key="java" value="177" />
+          <entry key="java" value="200" />
+          <entry key="md" value="1" />
           <entry key="prefs" value="2" />
-          <entry key="properties" value="24" />
-          <entry key="sql" value="6" />
+          <entry key="properties" value="32" />
+          <entry key="sql" value="10" />
           <entry key="tld" value="2" />
-          <entry key="xml" value="54" />
+          <entry key="xml" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="58" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="177" />
+          <entry key="JAVA" value="200" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Properties" value="24" />
-          <entry key="SQL" value="6" />
+          <entry key="Properties" value="32" />
+          <entry key="SQL" value="10" />
           <entry key="Scratch" value="1" />
           <entry key="UML" value="2" />
-          <entry key="XML" value="56" />
+          <entry key="XML" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
           <entry key="ft" value="97" />
-          <entry key="java" value="11294" />
-          <entry key="properties" value="129" />
+          <entry key="java" value="11296" />
+          <entry key="md" value="23" />
+          <entry key="properties" value="133" />
           <entry key="tld" value="158" />
-          <entry key="txt" value="20" />
-          <entry key="xml" value="2931" />
+          <entry key="txt" value="24" />
+          <entry key="xml" value="2944" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11294" />
-          <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Properties" value="129" />
+          <entry key="JAVA" value="11296" />
+          <entry key="Markdown" value="23" />
+          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="Properties" value="133" />
           <entry key="SQL" value="2" />
           <entry key="VTL" value="97" />
-          <entry key="XML" value="3087" />
+          <entry key="XML" value="3100" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/mybatis-config.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/mybatis-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="33" column="51" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="51" />
+            <state relative-caret-position="241">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/mysql.sql">
+        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Role.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter3/mapper/RoleMapper2.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/MaleEmployee.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Task.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/FemaleHealthForm.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="84">
+              <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/jdbc.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/MaleHealthForm.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/FemaleEmployee.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/HealthForm.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/WorkCard.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/EmployeeTask.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -182,12 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter2/factory/IProduct.java" />
-        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter2/factory/abstractfactory/IProductFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter2/factory/simplefactory/ProductFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter2/factory/abstractfactory/ProductFactory1.java" />
-        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter2/factory/abstractfactory/ProductFactory2.java" />
-        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter2/factory/abstractfactory/ProductFactory3.java" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter2/factory/abstractfactory/ProductFactory.java" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter2/observe/TicketBuilder.java" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter2/builder/TickerHelper.java" />
@@ -233,6 +264,12 @@
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter4/mapper/RoleMapper.xml" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter4/databaseidprovider/MyDatabaseIdProvider.java" />
         <option value="$PROJECT_DIR$/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter5/jdbc.properties" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter5/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/EmployeeTask.java" />
+        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter5/enumeration/SexEnum.java" />
+        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Employee.java" />
       </list>
     </option>
   </component>
@@ -292,7 +329,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <flattenPackages ProjectPane="false" />
@@ -306,12 +345,42 @@
           <expand>
             <path>
               <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter4" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter4" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chapter5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chapter5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chapter5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chapter5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter5" type="462c0819:PsiDirectoryNode" />
+              <item name="enumeration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
@@ -350,7 +419,17 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="learn" type="462c0819:PsiDirectoryNode" />
               <item name="ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter4" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter5" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -364,12 +443,13 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SearchEverywhereHistoryKey" value="BASE64Decoder&#9;PSI&#9;JAVA://com.sun.xml.internal.messaging.saaj.packaging.mime.util.BASE64DecoderStream&#10;getMapper&#9;PSI&#9;JAVA://org.apache.ibatis.binding.MapperRegistry#getMapper&#10;Sqlsession.class&#9;FILE&#9;jar:///usr/local/lib/mybatis-3.4.6.jar!/org/apache/ibatis/session/SqlSessionFactory.class&#10;Resource.getResourceAsStream&#9;null&#9;null" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540555053242" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540628802598" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssm/Chapter4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssm/Chapter5" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -379,27 +459,28 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.learn.ssm.chapter4.enviroments.transactionmanager" />
-      <recent name="com.learn.ssm.chapter3.mapper" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/com/learn/ssm/chapter3" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/learn/ssm/chapter5" />
       <recent name="$PROJECT_DIR$/src/com/learn/ssm/chapter4" />
       <recent name="$PROJECT_DIR$/target/production/SSM" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/com/learn/ssm" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.learn.ssm.chapter5.enumeration" />
       <recent name="com.learn.ssm.chapter2.factory.abstractfactory" />
       <recent name="com.learn.ssm.chapter2.observe" />
       <recent name="com.lean.ssm.chapter2.dynamicProxy.interceptor" />
       <recent name="com.lean.ssm.chapter2.dynamicProxy.cglib" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/com/learn/ssm/chapter3" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.learn.ssm.chapter4.enviroments.transactionmanager" />
+      <recent name="com.learn.ssm.chapter3.mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -503,6 +584,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6de380b8-7e07-4a26-9070-538a35b66679" name="Default Changelist" comment="" />
+      <changelist id="1653bea8-9619-4171-82c4-d308de9321e0" name="undo" comment="" />
       <created>1539693938376</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -520,7 +602,7 @@
       <workItem from="1540367933549" duration="902000" />
       <workItem from="1540368873840" duration="12042000" />
       <workItem from="1540457560023" duration="17083000" />
-      <workItem from="1540612627267" duration="646000" />
+      <workItem from="1540612627267" duration="8281000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1540554939087</created>
@@ -529,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540554939087</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init project">
+      <created>1540613708046</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540613708046</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -538,7 +627,16 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80117000" />
+    <option name="totallyTimeSpent" value="87752000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1440" height="838" extended-state="6" />
@@ -551,13 +649,13 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3275862" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39857143" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32902297" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.7083333" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.59770113" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.33189654" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -629,271 +727,10 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../ssm/Chapter4/src/com/learn/ssm/chapter4/utils/SqlSessionFactoryUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/lib/mybatis-3.4.6.jar!/org/apache/ibatis/type/TypeAliasRegistry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/lib/mybatis-3.4.6.jar!/org/apache/ibatis/type/BooleanTypeHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/lib/mybatis-3.4.6.jar!/org/apache/ibatis/type/StringTypeHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/lib/mybatis-3.4.6.jar!/org/apache/ibatis/type/BaseTypeHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ssm/Chapter4/bin/mysql.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ssm/Chapter4/src/com/learn/ssm/chapter4/typehandler/MyTypeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/mapper/RoleMapper2.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar:///usr/local/lib/mybatis-3.4.6.jar!/org/apache/ibatis/type/TypeReference.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/BuildSqlSessionFacotry.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ssm/Chapter4/bin/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ssm/Chapter4/bin/com/learn/ssm/chapter4/main/Chapter4Main.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/lib/mybatis-3.4.6.jar!/org/apache/ibatis/session/SqlSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/pojo/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter3/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/typehandler/MyTypeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1214#1215#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1381#1382#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/mapper/UserMapper.xml.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/mapper/UserMapper.tld" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.xml" />
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ssm/Chapter4/src/com/learn/ssm/chapter4/enumeration/SexEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="110" selection-start-line="10" selection-start-column="110" selection-end-line="10" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/lib/mybatis-3.4.6.jar!/org/apache/ibatis/type/MappedTypes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/lib/mybatis-3.4.6.jar!/org/apache/ibatis/reflection/factory/DefaultObjectFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/objectfactory/MyObjectFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1479#1480#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/enumeration/SexEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/typehandler/SexEnumTypeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/enviroments/transactionmanager/MyTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/enviroments/transactionmanager/MyTransactionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/production/SSM/log4j.properties" />
-    <entry file="file://$PROJECT_DIR$/target/production/SSM/jdbc.properties" />
-    <entry file="file://$PROJECT_DIR$/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/enviroments/datasource/DbcpDataSourceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ssm/Chapter4/src/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="24" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -965,16 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/mysql.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -982,10 +809,219 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/bin/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/bin/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/bin/oracle.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/mysql.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="148" column="47" lean-forward="true" selection-start-line="148" selection-start-column="47" selection-end-line="148" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/oracle.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/bin/mysql.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/bin/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter3/mapper/RoleMapper2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
+        <state relative-caret-position="231">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/mysql.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/src/com/ssm/chapter5/pojo/WorkCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/src/com/ssm/chapter5/pojo/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/src/com/ssm/chapter5/pojo/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/src/com/ssm/chapter5/pojo/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/src/com/ssm/chapter5/pojo/EmployeeTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/src/com/ssm/chapter5/pojo/FemaleEmployee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/src/com/ssm/chapter5/pojo/FemaleHealthForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/src/com/ssm/chapter5/pojo/HealthForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-389">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/src/com/ssm/chapter5/pojo/MaleEmployee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Role.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/MaleEmployee.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Task.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/MaleHealthForm.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/FemaleEmployee.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/HealthForm.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/WorkCard.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/EmployeeTask.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ssm/Chapter5/src/com/ssm/chapter5/enumeration/SexEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter4/enumeration/SexEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/enumeration/SexEnum.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/FemaleHealthForm.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter5/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1042,7 +1078,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Chapter4</last-edited>
+          <last-edited>Chapter5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
