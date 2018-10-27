@@ -1,4 +1,4 @@
-package com.learn.ssm.chapter4.enumeration;
+package com.learn.ssm.chapter5.enumeration;
 
 public enum SexEnum {
     MALE(1, "男"),

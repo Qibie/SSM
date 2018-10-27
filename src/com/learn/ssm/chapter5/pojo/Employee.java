@@ -1,9 +1,9 @@
-package com.ssm.chapter5.pojo;
+package com.learn.ssm.chapter5.pojo;
+
+import com.learn.ssm.chapter5.enumeration.SexEnum;
 
 import java.util.Date;
 import java.util.List;
-
-import com.ssm.chapter5.enumeration.SexEnum;
 
 public class Employee {
 
@@ -15,9 +15,9 @@ public class Employee {
 	private String email;
 	private String position;
 	private String note;
-    //工牌按一对一级联
+    //锟斤拷锟狡帮拷一锟斤拷一锟斤拷锟斤拷
 	private WorkCard workCard;
-	//雇员任务，一对多级联
+	//锟斤拷员锟斤拷锟斤拷一锟皆多级锟斤拷
 	private List<EmployeeTask> employeeTaskList = null;
 	
 	public Long getId() {

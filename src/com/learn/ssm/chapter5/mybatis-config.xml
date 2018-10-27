@@ -10,7 +10,7 @@
 	</settings>
 	
 	<typeAliases>
-		<package name="com.ssm.chapter5.pojo" />
+		<package name="com.learn.ssm.chapter5.pojo" />
 	</typeAliases>
 	<!-- 数据库环境 -->
 	<environments default="development">
@@ -26,7 +26,7 @@
 	</environments>
 
 	<mappers>
-		<package name="com.ssm.chapter5.mapper" />
-		<package name="com.ssm.chapter5.mapper2" />
+		<package name="com.learn.ssm.chapter5.mapper" />
+		<package name="com.learn.ssm.chapter5.mapper2" />
 	</mappers>
 </configuration>

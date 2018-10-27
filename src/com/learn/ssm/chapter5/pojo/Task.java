@@ -1,4 +1,4 @@
-package com.ssm.chapter5.pojo;
+package com.learn.ssm.chapter5.pojo;
 
 public class Task {
 	private Long id;
