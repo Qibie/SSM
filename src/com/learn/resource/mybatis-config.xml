@@ -26,8 +26,9 @@
 	</environments>
 
 	<mappers>
-		<!--<package name="com.learn.ssm.chapter5.mapper" />-->
+		<package name="com.learn.ssm.chapter5.mapper" />
 		<!--<package name="com.learn.ssm.chapter5.mapper2" />-->
-		<mapper resource="com/learn/ssm/chapter5/mapper/RoleMapper.xml"/>
+		<!--<mapper resource="com/learn/ssm/chapter5/mapper/RoleMapper.xml"/>-->
+		<!--<mapper class="com.learn.ssm.chapter5.mapper.RoleMapper"/>-->
 	</mappers>
 </configuration>
