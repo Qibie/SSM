@@ -1,6 +1,8 @@
 package com.learn.ssm.chapter5.main;
 
+import com.learn.ssm.chapter5.mapper.EmployeeMapper;
 import com.learn.ssm.chapter5.mapper.RoleMapper;
+import com.learn.ssm.chapter5.pojo.Employee;
 import com.learn.ssm.chapter5.pojo.PageParams;
 import com.learn.ssm.chapter5.pojo.Role;
 import com.learn.ssm.chapter5.pojo.RoleParams;
@@ -24,13 +26,17 @@ public class Chapter5Main {
     private static Logger logger = Logger.getLogger(Chapter5Main.class);
 
     public static void main(String[] args) {
-        // testGetRole();
+        testGetRole();
         // testGetRoleUseResultMap();
         // testFindRolesByMap();
         // findRolesByAnnotation();
         // findRolesByBean();
         // findByMix();
-        testRowBounds();
+        // testRowBounds();
+        // testInsertRole();
+        // testUpdateRole();
+        // testDeleteRole();
+        testGetEmployee();
     }
 
     public static void testGetRole() {
@@ -147,6 +153,80 @@ public class Chapter5Main {
             RowBounds rowBounds = new RowBounds(0, 20);
             List<Role> roleList = roleMapper.findByRowBounds("role_name", "note", rowBounds);
             logger.info(roleList.size());
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    private static void testInsertRole() {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
+            Role role = new Role();
+            role.setRoleName("role_test");
+            role.setNote("note_test");
+            int i = roleMapper.insertRole(role);
+            sqlSession.commit();
+            logger.info(role + "" + " i:" + i);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    private static void testUpdateRole() {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
+            Role role = new Role();
+            role.setRoleName("role_dest");
+            role.setNote("note_dest");
+            role.setId(11L);
+            int i = roleMapper.updateRole(role);
+            sqlSession.commit();
+            logger.info(role + "" + " i:" + i);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    private static void testDeleteRole() {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
+            int i = roleMapper.deleteRole(11L);
+            sqlSession.commit();
+            logger.info("i:" + i);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    public static void testGetEmployee() {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            EmployeeMapper employeeMapper = sqlSession.getMapper(EmployeeMapper.class);
+            Employee employee = employeeMapper.getEmployee(1L);
+            logger.info("Employee birthday:" + employee.getBirthday());
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

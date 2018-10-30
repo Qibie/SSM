@@ -15,9 +15,9 @@ public class Employee {
 	private String email;
 	private String position;
 	private String note;
-    //���ư�һ��һ����
+	// 工牌按一对一级联
 	private WorkCard workCard;
-	//��Ա����һ�Զ༶��
+	// 雇员任务，一对多级联
 	private List<EmployeeTask> employeeTaskList = null;
 	
 	public Long getId() {

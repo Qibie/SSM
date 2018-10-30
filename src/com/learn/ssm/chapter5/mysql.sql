@@ -53,7 +53,7 @@ CREATE TABLE t_employee
 (
    id                   INT(12) NOT NULL AUTO_INCREMENT,
    real_name            VARCHAR(60) NOT NULL,
-   sex                  INT(2) NOT NULL COMMENT '1 - ÄÐ 
+   sex                  INT(2) NOT NULL COMMENT '1 - ï¿½ï¿½ 
             0 -Å®',
    birthday             DATE NOT NULL,
    mobile               VARCHAR(20) NOT NULL,
@@ -62,7 +62,7 @@ CREATE TABLE t_employee
    note                 VARCHAR(256),
    PRIMARY KEY (id)
 );
-
+insert into t_employee(id, real_name, sex, birthday, mobile, email, position, note) values('1', 'zhangsan', '1', '1990-01-01', '13888888888', 'mht@qq.com', 'manager', 'note_3');
 /*==============================================================*/
 /* Table: t_employee_task                                       */
 /*==============================================================*/

@@ -8,8 +8,17 @@
         <result property="note" column="note"/>
     </resultMap>
 
+    <sql id="roleCols">
+        id, role_name, note
+    </sql>
+
+    <sql id="roleCols1">
+        ${alias}.id, ${alias}.role_name, ${alias}.note
+    </sql>
+
     <select id="getRoleUseResultMap" parameterType="long" resultMap="roleMap">
-        select id, role_name, note from t_role where id = #{id}
+        <!--select id, role_name, note from t_role where id = #{id}-->
+        select <include refid="roleCols"/> from t_role where id = #{id}
     </select>
 
     <select id="getRole" parameterType="long" resultType="com.learn.ssm.chapter5.pojo.Role">
@@ -46,4 +55,26 @@
         where role_name like concat('%', #{roleName}, '%')
         and note like concat('%', #{note}, '%')
     </select>
+
+    <!--主键回填-->
+    <!--<insert id="insertRole" parameterType="role" useGeneratedKeys="true" keyProperty="id">-->
+        <!--insert into t_role(role_name, note) values (#{roleName}, #{note})-->
+    <!--</insert>-->
+
+    <!--自定义主键-->
+    <insert id="insertRole" parameterType="role">
+        <selectKey keyProperty="id" resultType="long" order="BEFORE">
+            select if (max(id) = null, 1, max(id) + 3) from from t_role
+        </selectKey>
+        <!--insert into t_role(id, role_name, note) values (#{id}, #{roleName}, #{note})-->
+        insert into t_role(<include refid="roleCols"/>) values (#{id}, #{roleName}, #{note})
+    </insert>
+
+    <update id="updateRole" parameterType="role">
+        update t_role set role_name = #{roleName}, note = #{note} where id = #{id}
+    </update>
+
+    <delete id="deleteRole" parameterType="long">
+        delete from t_role where id = #{id}
+    </delete>
 </mapper>

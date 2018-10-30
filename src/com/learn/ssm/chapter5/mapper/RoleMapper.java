@@ -29,4 +29,10 @@ public interface RoleMapper {
     List<Role> findByMix(@Param("params") RoleParams roleParams, @Param("page")PageParams pageParams);
 
     List<Role> findByRowBounds(@Param("roleName") String roleName, @Param("note") String note, RowBounds rowBounds);
+
+    Integer insertRole(Role role);
+
+    Integer updateRole(Role role);
+
+    Integer deleteRole(Long id);
 }

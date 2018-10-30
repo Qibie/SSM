@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.ssm.chapter5.mapper.EmployeeMapper">
+    <resultMap id="employee" type="com.learn.ssm.chapter5.pojo.Employee">
+        <id column="id" property="id"/>
+        <result column="real_name" property="realName"/>
+        <result column="sex" property="sex" typeHandler="com.learn.ssm.chapter5.typeHandler.SexTypeHandler"/>
+        <result column="birthday" property="birthday" />
+        <result column="mobile" property="mobile" />
+        <result column="email" property="email" />
+        <result column="position" property="position" />
+        <result column="note" property="note" />
+        <association property="workCard" column="id" select="com.learn.ssm.chapter5.mapper.WorkCardMapper.getWorkCardByEmpId"/>
+        <collection property="employeeTaskList" column="id" select="com.learn.ssm.chapter5.mapper.EmployeeTaskMapper.getEmployeeTaskByEmpId"/>
+        <discriminator javaType="long" column="sex">
+            <case value="1" resultMap="maleHealthFormMapper"/>
+            <case value="2" resultMap="femaleHealthFormMapper"/>
+        </discriminator>
+    </resultMap>
+
+    <resultMap id="femaleHealthFormMapper" type="com.learn.ssm.chapter5.pojo.FemaleEmployee" extends="employee">
+        <association property="femaleHealthForm" column="id" select="com.learn.ssm.chapter5.mapper.FemaleHealthFormMapper.getFemaleHealthForm"/>
+    </resultMap>
+
+    <resultMap id="maleHealthFormMapper" type="com.learn.ssm.chapter5.pojo.MaleEmployee" extends="employee">
+        <association property="maleHealthForm" column="id" select="com.learn.ssm.chapter5.mapper.MaleHealthFormMapper.getMaleHealthForm"/>
+    </resultMap>
+
+    <select id="getEmployee" parameterType="long" resultMap="employee">
+        select id, real_name as roleName, sex, birthday, mobile, email, position, note from t_employee where id = #{id}
+    </select>
+</mapper>
