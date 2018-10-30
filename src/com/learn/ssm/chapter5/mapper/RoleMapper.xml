@@ -18,9 +18,32 @@
 
     <select id="findRolesByMap" parameterType="map" resultType="role">
 		select id, role_name as roleName, note from t_role
-		where role_name like
-		concat('%', #{roleName}, '%')
+		where role_name like concat('%', #{roleName}, '%')
 		and note like concat('%', #{note}, '%')
 	</select>
 
+    <select id="findRolesByAnnotation" resultType="role">
+        select id, role_name as roleName, note from t_role
+        where role_name like concat('%', #{roleName}, '%')
+		and note like concat('%', #{note}, '%')
+    </select>
+
+    <select id="findRolesByBean" resultMap="roleMap" parameterType="com.learn.ssm.chapter5.pojo.RoleParams">
+        select id, role_name as roleName, note from t_role
+        where role_name like concat('%', #{roleName}, '%')
+		and note like concat('%', #{note}, '%')
+    </select>
+
+    <select id="findByMix" resultType="role">
+        select id, role_name as roleName, note from t_role
+        where role_name like concat('%', #{params.roleName}, '%')
+        and note like concat('%', #{params.note}, '%')
+        limit #{page.start}, #{page.limit}
+    </select>
+
+    <select id="findByRowBounds" resultType="role">
+        select id, role_name as roleName, note from t_role
+        where role_name like concat('%', #{roleName}, '%')
+        and note like concat('%', #{note}, '%')
+    </select>
 </mapper>

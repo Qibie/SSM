@@ -1,12 +1,16 @@
 package com.learn.ssm.chapter5.main;
 
 import com.learn.ssm.chapter5.mapper.RoleMapper;
+import com.learn.ssm.chapter5.pojo.PageParams;
 import com.learn.ssm.chapter5.pojo.Role;
+import com.learn.ssm.chapter5.pojo.RoleParams;
 import com.learn.ssm.chapter5.utils.SqlSessionFactoryUtils;
+import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.log4j.Logger;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -21,9 +25,12 @@ public class Chapter5Main {
 
     public static void main(String[] args) {
         // testGetRole();
-        testGetRoleUseResultMap();
+        // testGetRoleUseResultMap();
         // testFindRolesByMap();
-
+        // findRolesByAnnotation();
+        // findRolesByBean();
+        // findByMix();
+        testRowBounds();
     }
 
     public static void testGetRole() {
@@ -70,6 +77,76 @@ public class Chapter5Main {
             parameterMap.put("note", "1");
             Role role = roleMapper.findRolesByMap(parameterMap);
             logger.info(role);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    private static void findRolesByAnnotation() {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
+            List<Role> roleList = roleMapper.findRolesByAnnotation("1", "1");
+            logger.info(roleList.get(0).toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    private static void findRolesByBean() {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
+            RoleParams roleParams = new RoleParams("1", "1");
+            List<Role> roleList = roleMapper.findRolesByBean(roleParams);
+            logger.info(roleList.get(0).toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    private static void findByMix() {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
+            RoleParams roleParams = new RoleParams("1", "1");
+            PageParams pageParams = new PageParams();
+            pageParams.setStart(0);
+            pageParams.setLimit(1);
+            List<Role> roleList = roleMapper.findByMix(roleParams, pageParams);
+            logger.info(roleList.get(0).toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    private static void testRowBounds() {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
+            RowBounds rowBounds = new RowBounds(0, 20);
+            List<Role> roleList = roleMapper.findByRowBounds("role_name", "note", rowBounds);
+            logger.info(roleList.size());
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
