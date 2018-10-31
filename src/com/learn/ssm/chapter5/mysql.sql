@@ -53,8 +53,8 @@ CREATE TABLE t_employee
 (
    id                   INT(12) NOT NULL AUTO_INCREMENT,
    real_name            VARCHAR(60) NOT NULL,
-   sex                  INT(2) NOT NULL COMMENT '1 - �� 
-            0 -Ů',
+   sex                  INT(2) NOT NULL COMMENT '1 - 男
+            0 -女',
    birthday             DATE NOT NULL,
    mobile               VARCHAR(20) NOT NULL,
    email                VARCHAR(60) NOT NULL,
@@ -63,6 +63,8 @@ CREATE TABLE t_employee
    PRIMARY KEY (id)
 );
 insert into t_employee(id, real_name, sex, birthday, mobile, email, position, note) values('1', 'zhangsan', '1', '1990-01-01', '13888888888', 'mht@qq.com', 'manager', 'note_3');
+insert into t_employee(id, real_name, sex, birthday, mobile, email, position, note) values('2', 'dongmingzhu', '0', '1998-08-08', '13888888888', 'dmz@qq.com', 'cto', 'note_t_employee2');
+
 /*==============================================================*/
 /* Table: t_employee_task                                       */
 /*==============================================================*/
@@ -75,6 +77,7 @@ CREATE TABLE t_employee_task
    note                 VARCHAR(256),
    PRIMARY KEY (id)
 );
+insert into t_employee_task(emp_id, task_id, task_name,note) values('1', '1', 'taskName', 'note_t_employee_task');
 
 /*==============================================================*/
 /* Table: t_female_health_form                                  */
@@ -92,6 +95,7 @@ CREATE TABLE t_female_health_form
    note                 VARCHAR(256),
    PRIMARY KEY (id)
 );
+insert into t_female_health_form(emp_id, heart, liver, spleen, lung, kidney, uterus,  note) values('1', 'healthy', 'healthy', 'healthy', 'healthy', 'healthy', 'healthy', 'note_t_female_health_form');
 
 /*==============================================================*/
 /* Table: t_male_health_form                                    */
@@ -109,6 +113,7 @@ CREATE TABLE t_male_health_form
    note                 VARCHAR(256),
    PRIMARY KEY (id)
 );
+insert into t_male_health_form(emp_id, heart, liver, spleen, lung, kidney, prostate,  note) values('2', 'healthy', 'healthy', 'healthy', 'healthy', 'healthy', 'healthy', 'note_t_male_health_form');
 
 /*==============================================================*/
 /* Table: t_task                                                */
@@ -121,6 +126,7 @@ CREATE TABLE t_task
    note                 VARCHAR(256),
    PRIMARY KEY (id)
 );
+insert into t_task(title, context, note) values('taskName', 'taskContext', 'note_t_task');
 
 /*==============================================================*/
 /* Table: t_work_card                                           */
@@ -136,6 +142,8 @@ CREATE TABLE t_work_card
    note                 VARCHAR(256),
    PRIMARY KEY (id)
 );
+insert into t_work_card(emp_id, real_name, department, mobile, position, note) values('1', 'zhangsan', 'IT', '13888888888', 'manager', 'note_t_work_card');
+
 
 ALTER TABLE t_employee_task ADD CONSTRAINT FK_Reference_4 FOREIGN KEY (emp_id)
       REFERENCES t_employee (id) ON DELETE RESTRICT ON UPDATE RESTRICT;

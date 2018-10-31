@@ -26,7 +26,7 @@ public class Chapter5Main {
     private static Logger logger = Logger.getLogger(Chapter5Main.class);
 
     public static void main(String[] args) {
-        testGetRole();
+        // testGetRole();
         // testGetRoleUseResultMap();
         // testFindRolesByMap();
         // findRolesByAnnotation();
