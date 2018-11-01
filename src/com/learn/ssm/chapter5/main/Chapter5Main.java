@@ -36,7 +36,8 @@ public class Chapter5Main {
         // testInsertRole();
         // testUpdateRole();
         // testDeleteRole();
-        testGetEmployee();
+        // testGetEmployee();
+        testGetEmployee2();
     }
 
     public static void testGetRole() {
@@ -226,6 +227,22 @@ public class Chapter5Main {
             sqlSession = SqlSessionFactoryUtils.openSqlSession();
             EmployeeMapper employeeMapper = sqlSession.getMapper(EmployeeMapper.class);
             Employee employee = employeeMapper.getEmployee(1L);
+            logger.info("Employee birthday:" + employee.getBirthday());
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    public static void testGetEmployee2() {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            EmployeeMapper employeeMapper = sqlSession.getMapper(EmployeeMapper.class);
+            Employee employee = employeeMapper.getEmployee2(1L);
             logger.info("Employee birthday:" + employee.getBirthday());
         } catch (Exception e) {
             e.printStackTrace();

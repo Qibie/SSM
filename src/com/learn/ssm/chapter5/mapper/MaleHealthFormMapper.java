@@ -9,5 +9,5 @@ import com.learn.ssm.chapter5.pojo.MaleHealthForm;
  * @Date 10/30/18 9:02 PM
  */
 public interface MaleHealthFormMapper {
-    MaleHealthForm getMaleHealthForm(Long id);
+    MaleHealthForm getMaleHealthForm(Long empId);
 }

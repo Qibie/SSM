@@ -95,7 +95,7 @@ CREATE TABLE t_female_health_form
    note                 VARCHAR(256),
    PRIMARY KEY (id)
 );
-insert into t_female_health_form(emp_id, heart, liver, spleen, lung, kidney, uterus,  note) values('1', 'healthy', 'healthy', 'healthy', 'healthy', 'healthy', 'healthy', 'note_t_female_health_form');
+insert into t_female_health_form(emp_id, heart, liver, spleen, lung, kidney, uterus,  note) values('2', 'healthy', 'healthy', 'healthy', 'healthy', 'healthy', 'healthy', 'note_t_female_health_form');
 
 /*==============================================================*/
 /* Table: t_male_health_form                                    */
@@ -113,7 +113,7 @@ CREATE TABLE t_male_health_form
    note                 VARCHAR(256),
    PRIMARY KEY (id)
 );
-insert into t_male_health_form(emp_id, heart, liver, spleen, lung, kidney, prostate,  note) values('2', 'healthy', 'healthy', 'healthy', 'healthy', 'healthy', 'healthy', 'note_t_male_health_form');
+insert into t_male_health_form(emp_id, heart, liver, spleen, lung, kidney, prostate,  note) values('1', 'healthy', 'healthy', 'healthy', 'healthy', 'healthy', 'healthy', 'note_t_male_health_form');
 
 /*==============================================================*/
 /* Table: t_task                                                */
