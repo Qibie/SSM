@@ -2,10 +2,14 @@ package com.learn.ssm.chapter5.main;
 
 import com.learn.ssm.chapter5.mapper.EmployeeMapper;
 import com.learn.ssm.chapter5.mapper.RoleMapper;
+import com.learn.ssm.chapter5.mapper2.RoleMapper2;
+import com.learn.ssm.chapter5.mapper2.UserMapper2;
 import com.learn.ssm.chapter5.pojo.Employee;
 import com.learn.ssm.chapter5.pojo.PageParams;
 import com.learn.ssm.chapter5.pojo.Role;
 import com.learn.ssm.chapter5.pojo.RoleParams;
+import com.learn.ssm.chapter5.pojo2.Role2;
+import com.learn.ssm.chapter5.pojo2.User2;
 import com.learn.ssm.chapter5.utils.SqlSessionFactoryUtils;
 import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
@@ -37,7 +41,10 @@ public class Chapter5Main {
         // testUpdateRole();
         // testDeleteRole();
         // testGetEmployee();
-        testGetEmployee2();
+        // testGetEmployee2();
+        // testUserRole();
+        // testOneLevelCache();
+        testOneLevelCache2();
     }
 
     public static void testGetRole() {
@@ -47,7 +54,7 @@ public class Chapter5Main {
             RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
             Role roleVo = new Role();
             roleVo.setId(1L);
-            Role role = roleMapper.getRole(roleVo);
+            Role role = roleMapper.getRole(1L);
             logger.info(role + "");
         } catch (Exception e) {
             e.printStackTrace();
@@ -252,4 +259,70 @@ public class Chapter5Main {
             }
         }
     }
+
+    public static void testUserRole() {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            RoleMapper2 roleMapper2 = sqlSession.getMapper(RoleMapper2.class);
+            Role2 role2 = roleMapper2.getRole(1L);
+            logger.info(role2);
+            UserMapper2 userMapper2 = sqlSession.getMapper(UserMapper2.class);
+            User2 user2 = userMapper2.getUser(1L);
+            logger.info(user2.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    public static void testOneLevelCache() {
+        SqlSession sqlSession = null;
+        Logger logger = Logger.getLogger(Chapter5Main.class);
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
+            Role role = roleMapper.getRole(1L);
+            logger.info("再获取一次POJO......");
+            Role role2 = roleMapper.getRole(1L);
+        } catch(Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    public static void testOneLevelCache2() {
+        SqlSession sqlSession = null;
+        SqlSession sqlSession2 = null;
+        Logger logger = Logger.getLogger(Chapter5Main.class);
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            sqlSession2 = SqlSessionFactoryUtils.openSqlSession();
+            RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
+            Role role = roleMapper.getRole(1L);
+            // 需要提交，如果是一级缓存，MyBatis才会缓存对象到SqlSessionFactory层面
+            sqlSession.commit();
+            logger.info("不同sqlsession再获取一次POJO......");
+            RoleMapper roleMapper2 = sqlSession2.getMapper(RoleMapper.class);
+            Role role2 = roleMapper2.getRole(1L);
+            // 需要提交，MyBatis才缓存对象到SqlSessionFactory
+            sqlSession2.commit();
+        } catch(Exception e) {
+            logger.info(e.getMessage(), e);
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+            if (sqlSession2 != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
 }

@@ -18,7 +18,7 @@ import java.util.Map;
 public interface RoleMapper {
     Role getRoleUseResultMap(long id);
 
-    Role getRole(Role role);
+    Role getRole(Long id);
 
     Role findRolesByMap(Map<String, Object> parameterMap);
 

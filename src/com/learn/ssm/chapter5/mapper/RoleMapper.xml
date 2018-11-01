@@ -2,6 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.learn.ssm.chapter5.mapper.RoleMapper">
+    <!-- 测试二级缓存  -->
+    <cache eviction="LRU" flushInterval="60000"/>
+
     <resultMap id="roleMap" type="role">
         <id property="id" column="id"/>
         <result property="roleName" column="role_name"/>
@@ -21,7 +24,7 @@
         select <include refid="roleCols"/> from t_role where id = #{id}
     </select>
 
-    <select id="getRole" parameterType="long" resultType="com.learn.ssm.chapter5.pojo.Role">
+    <select id="getRole" parameterType="long" resultType="com.learn.ssm.chapter5.pojo.Role" flushCache="false" useCache="true">
         select id, role_name as roleName, note from t_role where id = #{id}
     </select>
 
