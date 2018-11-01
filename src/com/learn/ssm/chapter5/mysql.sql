@@ -19,6 +19,9 @@ role_name varchar(60) not null,
 note varchar(256) null,
 primary key(id)
 );
+insert into t_role2(id, role_name, note) values('1', 'role_name_1', 'note_1');
+insert into t_role2(id, role_name, note) values('2', 'role_name_2', 'note_2');
+insert into t_role2(id, role_name, note) values('3', 'role_name_3', 'note_3');
 
 create table t_user (
 id int(12) auto_increment, 
@@ -30,6 +33,8 @@ email VARCHAR(60) NOT NULL,
 note VARCHAR(256) NOT NULL,
 primary key(id)
 );
+insert into t_user(user_name, real_name, sex, moble, email, note) values ('user_name1', 'mahuateng', '1', '13888888888', 'mht@qq.com', 't_user_note1');
+insert into t_user(user_name, real_name, sex, moble, email, note) values ('user_name2', 'dongmingzhu', '0', '13800000000', 'dmz@geli.com', 't_user_note2');
 
 create table t_user_role (
 id INT(12) AUTO_INCREMENT, 
@@ -38,6 +43,8 @@ role_id int(12) not null,
  PRIMARY KEY(id),
  unique(user_id, role_id)
 ) ;
+insert into t_user_role(user_id, role_id) values ('1', '1');
+insert into t_user_role(user_id, role_id) values ('2', '2');
 
 DROP TABLE IF EXISTS t_female_health_form;
 DROP TABLE IF EXISTS t_male_health_form;
