@@ -1,9 +1,12 @@
 package com.learn.ssm.chapter5.main;
 
 import com.learn.ssm.chapter5.mapper.EmployeeMapper;
+import com.learn.ssm.chapter5.mapper.PdRoleMapper;
 import com.learn.ssm.chapter5.mapper.RoleMapper;
 import com.learn.ssm.chapter5.mapper2.RoleMapper2;
 import com.learn.ssm.chapter5.mapper2.UserMapper2;
+import com.learn.ssm.chapter5.param.PdCountRoleParams;
+import com.learn.ssm.chapter5.param.PdFindRoleParams;
 import com.learn.ssm.chapter5.pojo.Employee;
 import com.learn.ssm.chapter5.pojo.PageParams;
 import com.learn.ssm.chapter5.pojo.Role;
@@ -44,7 +47,9 @@ public class Chapter5Main {
         // testGetEmployee2();
         // testUserRole();
         // testOneLevelCache();
-        testOneLevelCache2();
+        // testOneLevelCache2();
+        testPdCountRoleParams();
+        // testPdFindRoleParams();
     }
 
     public static void testGetRole() {
@@ -325,4 +330,43 @@ public class Chapter5Main {
         }
     }
 
+    public static void testPdCountRoleParams() {
+        PdCountRoleParams params = new PdCountRoleParams();
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            PdRoleMapper roleMapper = sqlSession.getMapper(PdRoleMapper.class);
+            params.setRoleName("role_name");
+            roleMapper.countRole(params);
+            logger.info("total: " + params.getTotal());
+            logger.info("date: " + params.getExecDate());
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    public static void testPdFindRoleParams() {
+        PdFindRoleParams params = new PdFindRoleParams();
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = SqlSessionFactoryUtils.openSqlSession();
+            PdRoleMapper roleMapper = sqlSession.getMapper(PdRoleMapper.class);
+            params.setRoleName("role_name");
+            params.setStart(0);
+            params.setEnd(100);
+            roleMapper.findRole(params);
+            logger.info(params.getRoleList().size());
+            logger.info(params.getTotal());
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
 }

@@ -162,3 +162,31 @@ ALTER TABLE t_male_health_form ADD CONSTRAINT FK_Reference_6 FOREIGN KEY (emp_id
       REFERENCES t_employee (id) ON DELETE RESTRICT ON UPDATE RESTRICT;
 ALTER TABLE t_work_card ADD CONSTRAINT FK_Reference_7 FOREIGN KEY (emp_id)
       REFERENCES t_employee (id) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+/** 存储过程 *//
+DELIMITER //
+
+create procedure count_role(
+in p_role_name varchar(20), out count_total int, out exec_date date)
+begin
+select count(*) into count_total from t_role where role_name like '%';
+select current_date into exec_date;
+end//
+
+DELIMITER ;
+
+/** TODO:cursor */
+-- DELIMITER //
+--
+-- create procedure find_role(
+-- in p_role_name varchar(20),
+-- in p_start int,
+-- in p_end int,
+-- out r_count int)
+-- begin
+-- select count(*) into r_count from t_role where role_name like '%' || p_role_name || '%';
+-- declare ref_cur cursor for select id, role_name, note from (SELECT id, role_name, note rownum as row1 FROM t_role a where a.role_name like '%' || p_role_name || '%' and rownum <= p_end) where row1 > p_start;
+-- open ref_cur;
+-- end find_role //
+--
+-- DELIMITER ;
