@@ -3,12 +3,15 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<properties resource="jdbc.properties" />
-	
+
 	<settings>
-		<setting name="lazyLoadingEnabled" value="true" />
-		<setting name="aggressiveLazyLoading" value="false" />
+		<!--是否开启延迟加载-->
+		<setting name="lazyLoadingEnabled" value="true"/>
+		<!--是否采用层级加载-->
+		<!--<setting name="aggressiveLazyLoading" value="true"/>-->
+		<setting name="aggressiveLazyLoading" value="false"/>
 	</settings>
-	
+
 	<typeAliases>
 		<package name="com.learn.ssm.chapter5.pojo" />
 	</typeAliases>
@@ -26,8 +29,9 @@
 	</environments>
 
 	<mappers>
-		<!--<package name="com.learn.ssm.chapter5.mapper" />-->
-		<!--<package name="com.learn.ssm.chapter5.mapper2" />-->
-		<mapper resource="com/learn/ssm/chapter5/mapper/RoleMapper.xml"/>
+		<package name="com.learn.ssm.chapter5.mapper" />
+		<package name="com.learn.ssm.chapter5.mapper2" />
+		<!--<mapper resource="com/learn/ssm/chapter5/mapper/RoleMapper.xml"/>-->
+		<!--<mapper class="com.learn.ssm.chapter5.mapper.RoleMapper"/>-->
 	</mappers>
 </configuration>
