@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Cfg" removed="false">
+          <file>file://$MODULE_DIR$/src/com/learn/ssm/chapter9/spring-cfg.xml</file>
+          <file>file://$MODULE_DIR$/src/spring-cfg.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
@@ -9,10 +19,18 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="log4j-1.2.17" level="application" />
     <orderEntry type="library" name="mybatis-3.4.6" level="application" />
     <orderEntry type="library" name="mysql-connector-java-5.1.23-bin" level="application" />
-    <orderEntry type="library" name="cglib-3.2.5" level="application" />
+    <orderEntry type="library" name="mybatis-3.4.1" level="application" />
+    <orderEntry type="library" name="log4j-1.2.17" level="application" />
     <orderEntry type="library" name="commons-dbcp-1.4" level="application" />
+    <orderEntry type="library" name="cglib-3.2.5" level="application" />
+    <orderEntry type="library" name="spring-context-4.3.2.RELEASE" level="application" />
+    <orderEntry type="library" name="spring-beans-4.3.2.RELEASE" level="application" />
+    <orderEntry type="library" name="spring-core-4.3.2.RELEASE" level="application" />
+    <orderEntry type="library" name="log4j-core-2.3" level="application" />
+    <orderEntry type="library" name="spring-aop-4.3.2.RELEASE" level="application" />
+    <orderEntry type="library" name="commons-logging-1.2" level="application" />
+    <orderEntry type="library" name="spring-expression-4.3.2.RELEASE" level="application" />
   </component>
 </module>
