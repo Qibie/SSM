@@ -10,5 +10,6 @@ public class Chapter9Main {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-cfg.xml");
         JuiceMaker2 juiceMaker2 = (JuiceMaker2) ctx.getBean("juiceMaker2");
         System.out.println(juiceMaker2.makeJuice());
+        ((ClassPathXmlApplicationContext) ctx).close();
     }
 }
