@@ -41,4 +41,14 @@ public class UserRoleAssembly {
     public void setSet(Set<Role> set) {
         this.set = set;
     }
+
+    @Override
+    public String toString() {
+        return "UserRoleAssembly{" +
+                "id=" + id +
+                ", list=" + list +
+                ", map=" + map +
+                ", set=" + set +
+                '}';
+    }
 }

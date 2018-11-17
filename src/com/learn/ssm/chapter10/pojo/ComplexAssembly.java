@@ -1,9 +1,6 @@
 package com.learn.ssm.chapter10.pojo;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
+import java.util.*;
 
 public class ComplexAssembly {
     private Long id;
@@ -60,4 +57,17 @@ public class ComplexAssembly {
     public void setArray(String[] array) {
         this.array = array;
     }
+
+    @Override
+    public String toString() {
+        return "ComplexAssembly{" +
+                "id=" + id +
+                ", list=" + list +
+                ", map=" + map +
+                ", props=" + props +
+                ", set=" + set +
+                ", array=" + Arrays.toString(array) +
+                '}';
+    }
+
 }
