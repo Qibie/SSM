@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6de380b8-7e07-4a26-9070-538a35b66679" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter10/main/Chapter10Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/pojo/AnnotationMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/pojo/PojoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/pojo/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/service/impl/RoleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/ComplexAssembly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/ComplexAssembly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/UserRoleAssembly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/UserRoleAssembly.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/spring-cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring-cfg.xml" afterDir="false" />
     </list>
     <list id="1653bea8-9619-4171-82c4-d308de9321e0" name="undo" comment="" />
@@ -106,9 +109,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="SpringLocalModels/module=SSM" value="1" />
-          <entry key="class" value="30" />
+          <entry key="class" value="34" />
           <entry key="context" value="1" />
-          <entry key="java" value="60" />
+          <entry key="java" value="71" />
           <entry key="txt" value="2" />
           <entry key="xml" value="8" />
           <entry key="xsd" value="2" />
@@ -116,8 +119,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="30" />
-          <entry key="JAVA" value="60" />
+          <entry key="CLASS" value="34" />
+          <entry key="JAVA" value="71" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="UML" value="2" />
           <entry key="XML" value="10" />
@@ -125,15 +128,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5919" />
-          <entry key="txt" value="205" />
+          <entry key="java" value="6506" />
+          <entry key="txt" value="250" />
           <entry key="xml" value="888" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5919" />
-          <entry key="PLAIN_TEXT" value="205" />
+          <entry key="JAVA" value="6506" />
+          <entry key="PLAIN_TEXT" value="250" />
           <entry key="XML" value="888" />
         </counts>
       </usages-collector>
@@ -154,23 +157,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/spring-cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-              <folding>
-                <element signature="n#bean#2;n#beans#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/main/Chapter10Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/config/ApplicationConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <caret line="8" column="144" lean-forward="true" selection-start-line="8" selection-start-column="144" selection-end-line="8" selection-end-column="144" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,11 +169,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/UserRoleAssembly.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/pojo/AnnotationMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+            <state relative-caret-position="513">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -237,12 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter5/utils/SqlSessionFactoryUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/learn/resource/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/RoleParams.java" />
-        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/PageParams.java" />
-        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter5/log4j.properties" />
-        <option value="$PROJECT_DIR$/target/production/SSM/log4j.properties" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter5/mapper/RoleMapper.java" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter5/mapper/RoleMapper.xml" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter5/pojo/Employee.java" />
@@ -272,7 +257,6 @@
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter9/pojo/JuiceMaker2.java" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter9/main/Chapter9Main.java" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter9/Pond.java" />
-        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/Role.java" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/DailyAdviceClient.java" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/DailyAdviceServer.java" />
@@ -288,6 +272,13 @@
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/UserRoleAssembly.java" />
         <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/main/Chapter10Main.java" />
         <option value="$PROJECT_DIR$/src/spring-cfg.xml" />
+        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/Role.java" />
+        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/pojo/PojoConfig.java" />
+        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/pojo/Role.java" />
+        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/service/impl/RoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/config/ApplicationConfig.java" />
+        <option value="$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/pojo/AnnotationMain.java" />
       </list>
     </option>
   </component>
@@ -310,10 +301,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="951" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -375,7 +365,29 @@
               <item name="learn" type="462c0819:PsiDirectoryNode" />
               <item name="ssm" type="462c0819:PsiDirectoryNode" />
               <item name="chapter10" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter10" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter10" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -394,7 +406,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542462275520" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542469140923" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/learn/ssm" />
@@ -421,11 +433,11 @@
       <recent name="$PROJECT_DIR$/target/production/SSM" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.learn.ssm.chapter10.annotation.pojo" />
       <recent name="com.learn.ssm.chapter10.netandthread" />
       <recent name="com.learn.ssm.chapter5.mapper" />
       <recent name="com.learn.ssm.chapter5.enumeration" />
       <recent name="com.learn.ssm.chapter2.factory.abstractfactory" />
-      <recent name="com.learn.ssm.chapter2.observe" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.learn.ssm.chapter4.enviroments.transactionmanager" />
@@ -444,7 +456,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Chapter10Main">
+  <component name="RunManager" selected="Application.AnnotationMain">
+    <configuration name="AnnotationMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.ssm.chapter10.annotation.pojo.AnnotationMain" />
+      <module name="SSM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.ssm.chapter10.annotation.pojo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Chapter10Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learn.ssm.chapter10.main.Chapter10Main" />
       <module name="SSM" />
@@ -497,33 +522,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadTestDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learn.ssm.chapter10.netandthread.ThreadTestDriver" />
-      <module name="SSM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.learn.ssm.chapter10.netandthread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.ThreadTestDriver" />
       <item itemvalue="Application.RunThreads" />
       <item itemvalue="Application.RyanAndMonicaJob" />
       <item itemvalue="Application.SimpleChatClient" />
       <item itemvalue="Application.Chapter10Main" />
+      <item itemvalue="Application.AnnotationMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AnnotationMain" />
         <item itemvalue="Application.Chapter10Main" />
         <item itemvalue="Application.SimpleChatClient" />
         <item itemvalue="Application.RyanAndMonicaJob" />
         <item itemvalue="Application.RunThreads" />
-        <item itemvalue="Application.ThreadTestDriver" />
       </list>
     </recent_temporary>
   </component>
@@ -555,7 +567,7 @@
       <workItem from="1540874102586" duration="8298000" />
       <workItem from="1540890834168" duration="7934000" />
       <workItem from="1542182256358" duration="12288000" />
-      <workItem from="1542367002176" duration="13385000" />
+      <workItem from="1542367002176" duration="17035000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1540554939087</created>
@@ -620,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542459348926</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="load bean by xml way commit code 20181117">
+      <created>1542462318666</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542462318666</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -629,7 +648,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150110000" />
+    <option name="totallyTimeSpent" value="153760000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -641,10 +660,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="761" y="0" width="782" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22252011" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26243094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -653,8 +672,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.50496453" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.35744682" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.504298" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35744682" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32711622" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3275862" />
@@ -664,7 +683,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32624114" />
       <window_info anchor="bottom" id="Inspection Results" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.44397163" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.44842407" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -750,7 +769,8 @@
     <MESSAGE value="Head First Java IO chapter 20181114" />
     <MESSAGE value="Spring IOC commit 20181114" />
     <MESSAGE value="Head First Java Net&amp;&amp;Thread chapter code commit 20181117" />
-    <option name="LAST_COMMIT_MESSAGE" value="Head First Java Net&amp;&amp;Thread chapter code commit 20181117" />
+    <MESSAGE value="load bean by xml way commit code 20181117" />
+    <option name="LAST_COMMIT_MESSAGE" value="load bean by xml way commit code 20181117" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -761,12 +781,6 @@
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/main/Chapter10Main.java</url>
-          <line>13</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -775,60 +789,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/src/com/learn/resource/lib/spring-beans-4.3.2.RELEASE.jar!/org/springframework/beans/factory/BeanFactoryAware.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/com/learn/resource/lib/spring-context-4.3.2.RELEASE.jar!/org/springframework/context/ApplicationContextAware.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/com/learn/resource/lib/spring-beans-4.3.2.RELEASE.jar!/org/springframework/beans/factory/InitializingBean.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/com/learn/resource/lib/spring-beans-4.3.2.RELEASE.jar!/org/springframework/beans/factory/config/BeanFactoryPostProcessor.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/com/learn/resource/lib/spring-beans-4.3.2.RELEASE.jar!/org/springframework/beans/factory/config/BeanPostProcessor.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/com/learn/resource/lib/spring-beans-4.3.2.RELEASE.jar!/org/springframework/beans/factory/DisposableBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="1304" column="18" selection-start-line="1304" selection-start-column="18" selection-end-line="1304" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter9/bean/DisposableBeanImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter9/pojo/JuiceMaker2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/OutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/FileOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -921,17 +881,6 @@
             <element signature="e#458#459#0" expanded="true" />
             <element signature="e#498#499#0" expanded="true" />
             <element signature="e#530#531#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1181,19 +1130,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/UserRoleAssembly.java">
+    <entry file="jar://$PROJECT_DIR$/src/com/learn/resource/lib/spring-beans-4.3.2.RELEASE.jar!/org/springframework/beans/factory/annotation/Value.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        <state relative-caret-position="171">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/com/learn/resource/lib/spring-context-4.3.2.RELEASE.jar!/org/springframework/stereotype/Component.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/com/learn/resource/lib/spring-context-4.3.2.RELEASE.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring-cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+          <folding>
+            <element signature="n#bean#2;n#beans#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/main/Chapter10Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="323">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1201,12 +1182,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring-cfg.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/pojo/UserRoleAssembly.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+        <state relative-caret-position="382">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
           <folding>
-            <element signature="n#bean#2;n#beans#0;n#!!top" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/service/impl/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/pojo/PojoConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/com/learn/resource/lib/spring-context-4.3.2.RELEASE.jar!/org/springframework/context/annotation/ComponentScan.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/pojo/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/config/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="8" column="144" lean-forward="true" selection-start-line="8" selection-start-column="144" selection-end-line="8" selection-end-column="144" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/learn/ssm/chapter10/annotation/pojo/AnnotationMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
